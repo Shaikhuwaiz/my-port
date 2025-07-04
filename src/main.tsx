@@ -5,6 +5,7 @@ import "./index.css";
 import Navbar from "./navbar.tsx";
 import Hero from "./hero.tsx"; // adjust path if needed
 import TechStack from "./TechCard";
+import Starfield from "./Starfield.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -13,5 +14,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <div className="min-h-screen bg-gray-100">
       <Hero />
     </div>
+    <div className="p-8">
+      <h2 className="text-3xl font-bold mb-6 text-center">Tech Stack</h2>
+      <TechStack />
+    </div>
+    <Starfield />
+    <main className="relative z-10"></main>
   </React.StrictMode>
 );
