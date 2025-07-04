@@ -29,8 +29,11 @@ const Hero = () => {
       <section id="about" className="mt-20 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-semibold">About Me</h2>
         <p className="text-gray-600 mt-4">
-          I'm a React/Tailwind developer based in India, passionate about
-          building user-friendly web apps and learning new technologies.
+          Hi, I’m Owaiz — a Full-Stack Web Developer based in India. I
+          specialize in creating clean, responsive UIs with React and Tailwind
+          CSS, and building scalable backend APIs using Node.js, Express, and
+          MongoDB. I enjoy learning new technologies and turning ideas into
+          real-world web applications.
         </p>
       </section>
 
