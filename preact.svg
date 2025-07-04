@@ -1,0 +1,14 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  aria-label="Preact"
+  viewBox="-256 -256 1800 512"
+  height="1.5em"
+  style="display: inline-block; vertical-align: middle;"
+>
+  <path d="M0,-256 221.7,-128 221.7,128 0,256 -221.7,128 -221.7,-128z" fill="white" />
+  <ellipse cx="0" cy="0" rx="75" ry="196" stroke-width="16" stroke-dasharray="382 65" stroke-dashoffset="420" fill="none" stroke="#673ab8" transform="rotate(52)" />
+  <ellipse cx="0" cy="0" rx="75" ry="196" stroke-width="16" stroke-dasharray="391 56" stroke-dashoffset="-301" fill="none" stroke="#673ab8" transform="rotate(-52)" />
+  <circle cx="0" cy="0" r="34" fill="#673ab8" />
+  <!-- The rest of the path for the word "Preact" -->
+  <path fill="white" d="M289.85 25.25L289.85 125L272 125L272-122.63L335.88-122.63Q379.45-122.63 ... [TRUNCATED FOR BREVITY] ..." />
+</svg>
