@@ -4,6 +4,7 @@ import App from "./compo.tsx";
 import "./index.css";
 import Navbar from "./navbar.tsx";
 import Hero from "./hero.tsx"; // adjust path if needed
+import TechStack from "./TechCard";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
