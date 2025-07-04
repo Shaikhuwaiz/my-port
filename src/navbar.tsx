@@ -7,7 +7,9 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-indigo-600">Owaiz.dev</div>
+        <div className="text-2xl font-bold text-indigo-600">
+          Owaiz React dev
+        </div>
 
         {/* Hamburger */}
         <div className="lg:hidden">
