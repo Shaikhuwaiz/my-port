@@ -10,6 +10,7 @@ import {
   FaGitAlt,
   FaSass,
   FaCoffee,
+  FaBeer,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -53,7 +54,7 @@ const techItems: {
   },
   {
     name: "Next.js",
-    icon: <SiNextdotjs size={40} className="text-black dark:text-white" />,
+    icon: <SiNextdotjs size={40} className="text-black dark:text-green" />,
   },
   { name: "HTML5", icon: <FaHtml5 size={40} className="text-orange-500" /> },
   { name: "CSS3", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
@@ -115,7 +116,9 @@ export default function TechStack() {
           >
             {/* 🟢 Animate only the icon */}
             <motion.div
+              drag
               className="mb-2 text-blue-500"
+              dragConstraints={{ left: 200, right: 200, top: 200, bottom: 200 }} // Optional: constrain movement
               animate={animation}
               whileHover={{ scale: 1.2 }}
             >
