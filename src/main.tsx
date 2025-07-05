@@ -8,6 +8,7 @@ import TechStack from "./TechCard";
 import { motion } from "framer-motion";
 import DraggableBall from "./DraggableBall.tsx";
 
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Navbar />

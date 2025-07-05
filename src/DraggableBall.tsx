@@ -4,12 +4,12 @@ function DraggableBall() {
   return (
     <motion.div
       drag
-      dragConstraints={{ left: 0, right: 200, top: 0, bottom: 200 }} // Optional: constrain movement
+      dragConstraints={{ left: 200, right: 200, top: 200, bottom: 200 }} // Optional: constrain movement
       style={{
         width: 50,
         height: 50,
         borderRadius: "50%",
-        backgroundColor: "blue",
+        backgroundColor: "green",
         cursor: "grab",
       }}
     />
