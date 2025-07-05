@@ -1,7 +1,5 @@
 import React, { JSX } from "react";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
-
 import {
   FaReact,
   FaNodeJs,
@@ -9,8 +7,6 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaSass,
-  FaCoffee,
-  FaBeer,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -60,7 +56,7 @@ const techItems: {
   { name: "CSS3", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
   { name: "Git", icon: <FaGitAlt size={40} className="text-orange-600" /> },
   { name: "SASS", icon: <FaSass size={40} />, motion: "bounce" },
-  { name: "Preact", icon: <FaSass size={40} className="text-pink-500" /> },
+  { name: "Preact", icon: <SiPreact size={40} className="text-pink-500" /> },
 ];
 
 const motionVariants: Record<MotionType, any> = {
@@ -89,8 +85,8 @@ const motionVariants: Record<MotionType, any> = {
   },
   brezze: {
     animate: {
-      x: [0, 4, -4, 4, 0], // gentle horizontal sway
-      rotate: [0, 1, -1, 1, 0], // slight rotation for realism
+      x: [0, 4, -4, 4, 0],
+      rotate: [0, 1, -1, 1, 0],
       transition: {
         duration: 3,
         repeat: Infinity,
@@ -114,17 +110,13 @@ export default function TechStack() {
             key={idx}
             className="bg-white p-4 rounded-lg flex flex-col items-center justify-center shadow hover:shadow-lg hover:ring hover:ring-blue-200 transition"
           >
-            {/* 🟢 Animate only the icon */}
             <motion.div
-              drag
-              className="mb-2 text-blue-500"
-              dragConstraints={{ left: 200, right: 200, top: 200, bottom: 200 }} // Optional: constrain movement
+              className="mb-2"
               animate={animation}
               whileHover={{ scale: 1.2 }}
             >
               {tech.icon}
             </motion.div>
-
             <p className="text-sm font-semibold text-gray-800">{tech.name}</p>
           </div>
         );
