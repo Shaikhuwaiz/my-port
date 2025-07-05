@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,13 +29,13 @@ const Navbar = () => {
           } lg:flex space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-gray-700 font-medium`}
         >
           <li className="hover:text-indigo-600 transition">
-            <a href="#home">Home</a>
+            <a href="/home">Home</a>
           </li>
           <li className="hover:text-indigo-600 transition">
-            <a href="#projects">Projects</a>
+            <a href="/projects">Projects</a>
           </li>
           <li className="hover:text-indigo-600 transition">
-            <a href="#about">About</a>
+            <a href="/about">About</a>
           </li>
           <li className="hover:text-indigo-600 transition">
             <a href="#contact">Contact</a>
