@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white px-4">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-transparent-to-b from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white px-4">
         <h1 className="text-4xl sm:text-6xl font-bold text-indigo-300 mb-4">
           Hi, I’m Owaiz 👋
         </h1>

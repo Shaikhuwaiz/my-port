@@ -98,7 +98,7 @@ const motionVariants: Record<MotionType, any> = {
 
 export default function TechStack() {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 p-6 bg-gray-50 rounded-lg shadow">
+    <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 p-6 bg-gradient-to-b from-black via-[#111111] to-transparent rounded-lg shadow">
       {techItems.map((tech, idx) => {
         const animation =
           tech.motion && motionVariants[tech.motion]
