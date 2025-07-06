@@ -5,55 +5,26 @@ export default function ExitAnimation() {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <div style={container}>
-      <AnimatePresence initial={false}>
-        {isVisible ? (
+    <div className="relative flex flex-col w-[100px] h-[160px]">
+      <AnimatePresence>
+        {isVisible && (
           <motion.div
+            key="box"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0 }}
-            style={box}
-            key="box"
+            className="w-[100px] h-[100px] bg-cyan-400 rounded-lg"
           />
-        ) : null}
+        )}
       </AnimatePresence>
+
       <motion.button
-        style={button}
         onClick={() => setIsVisible(!isVisible)}
         whileTap={{ y: 1 }}
+        className="absolute bottom-0 left-0 right-0 bg-cyan-400 text-[#0f1115] rounded-lg px-5 py-2"
       >
         {isVisible ? "Hide" : "Show"}
       </motion.button>
     </div>
   );
 }
-
-/**
- * ==============   Styles   ================
- */
-
-const container = {
-  display: "flex",
-  flexDirection: "column",
-  width: 100,
-  height: 160,
-  position: "relative",
-};
-
-const box = {
-  width: 100,
-  height: 100,
-  backgroundColor: "#0cdcf7",
-  borderRadius: "10px",
-};
-
-const button = {
-  backgroundColor: "#0cdcf7",
-  borderRadius: "10px",
-  padding: "10px 20px",
-  color: "#0f1115",
-  position: "absolute",
-  bottom: 0,
-  left: 0,
-  right: 0,
-};

@@ -1,14 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="backdrop-blur-md bg-gradient-to-r from-indigo-900/70 to-purple-900/70 shadow-lg fixed top-0 left-0 w-full z-50 border-b border-indigo-800">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-indigo-600">
+        <div className="text-2xl font-bold text-indigo-300 tracking-wide">
           Owaiz React dev
         </div>
 
@@ -21,23 +20,21 @@ const Navbar = () => {
             ☰
           </button>
         </div>
-
-        {/* Nav Links */}
         <ul
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-gray-700 font-medium`}
+          } lg:flex space-x-6 text-indigo-100 font-medium`}
         >
-          <li className="hover:text-indigo-600 transition">
+          <li className="hover:text-indigo-400 transition">
             <a href="/home">Home</a>
           </li>
-          <li className="hover:text-indigo-600 transition">
+          <li className="hover:text-indigo-400 transition">
             <a href="/projects">Projects</a>
           </li>
-          <li className="hover:text-indigo-600 transition">
+          <li className="hover:text-indigo-400 transition">
             <a href="/about">About</a>
           </li>
-          <li className="hover:text-indigo-600 transition">
+          <li className="hover:text-indigo-400 transition">
             <a href="#contact">Contact</a>
           </li>
           <li>
