@@ -7,16 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./navbar.tsx";
 import Hero from "./hero.tsx";
 import TechStack from "./TechCard.tsx";
-import Home from "./Home/home.tsx"; // Make sure this path matches exactly
+import Home from "./Home/home.tsx";
 import Projects from "./Projects/projects.tsx";
 import About from "./About/about.tsx";
-import StarsBackground from "./starsbackground";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="relative min-h-screen overflow-x-hidden">
-        <StarsBackground />
+      <div className="relative min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white">
         <Navbar />
         <Routes>
           <Route
