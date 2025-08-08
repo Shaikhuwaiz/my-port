@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // important
+    "jsx": "react-jsx",
+    "types": ["react", "react-dom", "node"],  // ✅ Forces JSX namespace to exist
     "esModuleInterop": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -15,12 +16,11 @@
     "noFallthroughCasesInSwitch": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-
-    // ✅ ADD THESE TWO LINES
-    "baseUrl": ".", 
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "skipLibCheck": true  // ✅ stops Netlify from choking on mismatched type packages
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
